@@ -1,0 +1,25 @@
+{
+    "name": "creativesofttechsolutions/laravelmodules",
+    "description": "A lightweight and powerful module/plugin manager for Laravel applications.",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CreativeSoftTechSolutions\\LaravelModules\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CreativeSoftTechSolutions\\LaravelModules\\ModuleServiceProvider"
+            ],
+            "aliases": {
+                "Module": "CreativeSoftTechSolutions\\LaravelModules\\Facades\\Module"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
